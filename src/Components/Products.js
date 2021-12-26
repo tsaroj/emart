@@ -37,7 +37,7 @@ export const Products = () => {
         return (
             <>
                 <div className='buttons'>
-                    <button className='btn btn-outline-dark'>All</button>
+                    <button className='btn btn-outline-dark  me-2'>All</button>
                     <button className='btn btn-outline-dark me-2'>Men's Clothing</button>
                     <button className='btn btn-outline-dark me-2'>Women's Clothing</button>
                     <button className='btn btn-outline-dark me-2'>Jewelery</button>
@@ -51,10 +51,10 @@ export const Products = () => {
 
     return (
         <div>
-            <div className='container'>
+            <div className='container my-5 py-5'>
                 <div className='row'>
-                    <div className='col-12'>
-                        <h1>Latest Products</h1>
+                    <div className='col-12 mb-5'>
+                        <h1 className='display-6 fw-bolder text-center'>Latest Products</h1>
                         <hr />
                     </div>
                 </div>
