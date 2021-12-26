@@ -24,13 +24,42 @@ export const Products = () => {
 
     }, [])
 
+
+    const Loading = () => {
+        return (
+            <>
+                Loading....
+            </>
+        )
+    }
+
+    const ShowProducts = () => {
+        return (
+            <>
+                <div className='buttons'>
+                    <button className='btn btn-outline-dark'>All</button>
+                    <button className='btn btn-outline-dark me-2'>Men's Clothing</button>
+                    <button className='btn btn-outline-dark me-2'>Women's Clothing</button>
+                    <button className='btn btn-outline-dark me-2'>Jewelery</button>
+                    <button className='btn btn-outline-dark me-2'>Electronics</button>
+                </ div>
+            </>
+
+        )
+    }
+
+
     return (
         <div>
             <div className='container'>
                 <div className='row'>
                     <div className='col-12'>
                         <h1>Latest Products</h1>
+                        <hr />
                     </div>
+                </div>
+                <div className='row justify-content-center'>
+                    {loading ? <Loading /> : <ShowProducts />}
                 </div>
             </div>
         </div>
