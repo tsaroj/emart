@@ -5,6 +5,7 @@ import { Products } from './Products'
 
 export const Home = () => {
     return (
+
         <>
             <div className='hero'>
 
@@ -15,6 +16,7 @@ export const Home = () => {
                             <h5 className="card-title display-3 fw-bolder mb-0">NEW SEASONS ARRIVALS</h5>
                             <p className="card-text fs-2">CHECK OUT ALL TRENDS</p>
                         </div>
+
                     </div>
                 </div>
                 <Products />
